@@ -1,0 +1,20 @@
+<VAST version="4">
+    <Ad id="adID">
+        <InLine>
+            <AdSystem>Smartclip</AdSystem>
+            <AdTitle>My Video Ad</AdTitle>
+            <Creatives>
+                <Creative>
+                  <Linear>
+                    <Duration>00:00:30</Duration>
+                        <MediaFiles>
+                            <MediaFile delivery="progressive" type="application/dash+xml" bitrate="1500" width="1920" height="1080">
+                                <![CDATA[https://livesim.dashif.org/livesim/chunkdur_1/ato_7/testpic4_8s/Manifest.mpd]]>
+                            </MediaFile>
+                        </MediaFiles>
+                    </Linear>
+                </Creative>
+            </Creatives>
+        </InLine>
+    </Ad>
+</VAST>
