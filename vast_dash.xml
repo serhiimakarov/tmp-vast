@@ -10,7 +10,7 @@
           <Linear>
             <Duration>00:00:15</Duration>
             <MediaFiles>
-               <MediaFile delivery="progressive" type="video/dash" bitrate="1500" width="1920" height="1080">
+               <MediaFile delivery="progressive" type="application/dash+xml" bitrate="1500" width="1920" height="1080">
                   <![CDATA[https://livesim.dashif.org/livesim/chunkdur_1/ato_7/testpic4_8s/Manifest.mpd]]>
                 </MediaFile>
            </MediaFiles>
