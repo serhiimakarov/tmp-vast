@@ -1,20 +1,35 @@
-<VAST version="4">
-    <Ad id="adID">
-        <InLine>
-            <AdSystem>Smartclip</AdSystem>
-            <AdTitle>My Video Ad</AdTitle>
-            <Creatives>
-                <Creative>
-                  <Linear>
-                    <Duration>00:00:30</Duration>
-                        <MediaFiles>
-                            <MediaFile delivery="progressive" type="application/dash+xml" bitrate="1500" width="1920" height="1080">
-                                <![CDATA[https://livesim.dashif.org/livesim/chunkdur_1/ato_7/testpic4_8s/Manifest.mpd]]>
-                            </MediaFile>
-                        </MediaFiles>
-                    </Linear>
-                </Creative>
-            </Creatives>
-        </InLine>
-    </Ad>
+<VAST version="3.0" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://www.iab.com/VAST">
+  <Ad id="12345">
+    <InLine>
+      <AdSystem>DanAds</AdSystem>
+      <AdTitle>RTL</AdTitle>
+      <Impression><![CDATA[https://audienceselect.hearst.com/]]></Impression>
+      <Creatives>
+        <Creative>
+          <UniversalAdId idRegistry="unknown" idValue="unknown">123</UniversalAdId>
+          <Linear>
+            <Duration>00:00:15</Duration>
+            <MediaFiles>
+               <MediaFile delivery="progressive" type="video/dash" bitrate="1500" width="1920" height="1080">
+                  <![CDATA[https://livesim.dashif.org/livesim/chunkdur_1/ato_7/testpic4_8s/Manifest.mpd]]>
+                </MediaFile>
+           </MediaFiles>
+            <VideoClicks>
+              <ClickThrough id="site">
+                <![CDATA[https://demo.danads.com//]]>
+              </ClickThrough>
+            </VideoClicks>
+            <TrackingEvents>
+              <Tracking event="start"><![CDATA[https://demo.danads.com//]]></Tracking>
+              <Tracking event="firstQuartile"><![CDATA[https://demo.danads.com//]]></Tracking>
+              <Tracking event="midpoint"><![CDATA[https://demo.danads.com//]]></Tracking>
+              <Tracking event="thirdQuartile"><![CDATA[https://demo.danads.com//]]></Tracking>
+              <Tracking event="complete"><![CDATA[https://demo.danads.com/]]></Tracking>
+              <Tracking event="progress" offset="00:00:15"><![CDATA[https://demo.danads.com/]]></Tracking>
+            </TrackingEvents>
+          </Linear>
+        </Creative>
+      </Creatives>
+    </InLine>
+  </Ad>
 </VAST>
